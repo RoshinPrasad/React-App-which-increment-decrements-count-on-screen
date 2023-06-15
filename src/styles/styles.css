@@ -1,0 +1,79 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-image: url('/public/3949089.jpg');
+    background-size: 150%;
+    background-position: center;
+  }
+  
+  .image-container {
+    margin-top: 20px;
+  }
+
+  .box {
+    border: 3px solid #000000;
+    border-radius: 8px;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(145, 213, 253, 0.8);
+  }
+  
+  .count {
+    font-size: 48px;
+    margin-bottom: 20px;
+    animation: countAnimation 0.3s;
+  }
+  
+  @keyframes countAnimation {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .button-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .increment-btn,
+.decrement-btn {
+  font-size: 24px;
+  padding: 10px 20px;
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.increment-btn:hover,
+.decrement-btn:hover {
+  background-color: #eec71c;
+  box-shadow: 0 0 10px #df1111, 0 0 20px #c90c0c;
+}
+
+.increment-btn:active,
+.decrement-btn:active {
+  background-color: #aaa;
+  box-shadow: 0 0 5px #fff, 0 0 10px #aaa;
+}
+
+.gif-image {
+    width: 200px;
+    height: auto;
+  }
+  
